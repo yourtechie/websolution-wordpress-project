@@ -302,10 +302,11 @@ The project consists of two main parts:
    ![](images/39.png)
 
 3. **Access WordPress**:
-   - Open your browser and navigate to `http://<Web-Server-Public-IP-Address>/wordpress/`.
+   - You need to open port 80 for web server to be able to view wordpress.
    ![](images/37.png)
 
 4. **Complete WordPress Setup**:
+   - Open your browser and navigate to `http://<Web-Server-Public-IP-Address>/wordpress/`.
    - Follow the on-screen instructions to complete the WordPress setup.
    ![](images/41.png)
    ![](images/42.png)
