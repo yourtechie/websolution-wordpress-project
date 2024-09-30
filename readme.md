@@ -1,7 +1,7 @@
 
 # Project: Deploy a 3-Tier Web Solution Using WordPress and MySQL on AWS EC2
 
-In this project, you will set up the infrastructure for a web solution using WordPress, a popular content management system. You will be using two separate Linux servers: one for the web server and another for the database server.
+In this project, we will set up the infrastructure for a web solution using WordPress, a popular content management system. We will be using two separate Linux servers: one for the web server and another for the database server.
 
 
 ## Project Overview
@@ -275,7 +275,6 @@ The project consists of two main parts:
    sudo yum install mysql
    sudo mysql -u myuser -p -h <DB-Server-Private-IP-Address>
    ```
-   ![](images/35.png)
    ![](images/36.png)
 
 2. **Verify the Connection**:
@@ -284,13 +283,16 @@ The project consists of two main parts:
      SHOW DATABASES;
      ```
 
+   Open port 3306 for MySQL DB server allowing access from Web Server Private IP
+   ![](images/35.png)
+
 3. **Access WordPress**:
    - Open your browser and navigate to `http://<Web-Server-Public-IP-Address>/wordpress/`.
    ![](images/37.png)
 
 4. **Complete WordPress Setup**:
    - Follow the on-screen instructions to complete the WordPress setup.
-
+   ![](images/41.png)
    ![](images/42.png)
 
 5. **Secure Your EC2 Instances**:
