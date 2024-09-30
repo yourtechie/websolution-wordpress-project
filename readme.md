@@ -286,6 +286,21 @@ The project consists of two main parts:
    Open port 3306 for MySQL DB server allowing access from Web Server Private IP
    ![](images/35.png)
 
+   Log into your webserver ec2 instance and access your wordpress directory
+    ```bash
+    sudo cd /var/html/wordpress
+    ```
+   Configure wordpress to use your mysql database we created earlier, to do this , we have to access the wp-config file , this is where the configuration of wordpress is done
+    ```bash
+   sudo vi wp-config.php
+    ```
+
+   Replace the variables of DB user, DB host, DB password .
+   DB host - this should be your mysql server ip address
+   DB password ; your database password
+   DB user ; the database user we created earlier
+   ![](images/39.png)
+
 3. **Access WordPress**:
    - Open your browser and navigate to `http://<Web-Server-Public-IP-Address>/wordpress/`.
    ![](images/37.png)
